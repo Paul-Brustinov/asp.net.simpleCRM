@@ -1,0 +1,2 @@
+kernel.Bind<DbContext>().To<SqliteDbContext>().InRequestScope();
+kernel.Bind<IGenericRepository<Client>>().To<RepoClient>().InRequestScope();
