@@ -7,6 +7,8 @@ using System.Net.Http;
 using System.Web.Http;
 using System.Web;
 using System.Web.Http.Results;
+using System.Web.Mvc;
+using System.Web.UI.WebControls;
 using Newtonsoft.Json;
 using Ninject.Activation;
 using _2x2_SimpleCRM.DataLayerSQLite;
@@ -24,7 +26,6 @@ namespace _2x2_SimpleCRM.AspNet.Controllers
         {
             this.Context = context;
             this.RepoClient = repoClient;
-
         }
 
         public JsonResult<List<Client>> GetAllClients()
